@@ -110,11 +110,11 @@ st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 # 설명 텍스트
 st.markdown("""
 <div class="card">
-    <span class="highlight">마음에 상처, 트라우마, 고통받고 계신가요?</span><br><br>
-    **여기 Kevin이 맛깔나게 여러 각도에서 제안합니다**<br>
+    <span class="highlight">마음에 상처, 트라우마, 고통받고 계신가요?</span><br> 
     <span class="highlight">아래 다양한 자료를 통해 트라우마 극복의 길을 찾아보세요</span>
 </div>
 """, unsafe_allow_html=True)
+st.markdown("여기 Kevin이 맛깔나게 여러 각도에서 제안합니다")
 
 # 버튼 섹션
 st.markdown("### 🎬 영상 자료 보기")
@@ -238,22 +238,22 @@ if 'show_extra' in st.session_state:
         </div>
         """, unsafe_allow_html=True)
 
-# 추가 설명
-st.markdown("""
-<div class="note">
-💡 **이용 안내**:
-- 화면이 안 나오면 새로고침(F5) 후 1-2분 정도 기다려주세요
-- 영상은 차분한 환경에서 보는 것을 추천합니다
-- 필요시 내용을 메모하거나 저장해 두세요
-- 본 자료는 전문적인 치료를 대체하지 않습니다
-</div>
-""", unsafe_allow_html=True)
+# # 추가 설명
+# st.markdown("""
+# <div class="note">
+# 💡 **이용 안내**:
+# - 화면이 안 나오면 새로고침(F5) 후 1-2분 정도 기다려주세요
+# - 영상은 차분한 환경에서 보는 것을 추천합니다
+# - 필요시 내용을 메모하거나 저장해 두세요
+# - 본 자료는 전문적인 치료를 대체하지 않습니다
+# </div>
+# """, unsafe_allow_html=True)
 
-# 푸터
-st.markdown("---")
-st.markdown("""
-<div style="text-align: center; color: #666; font-size: 12px;">
-    <p>© 2024 마음 치유 가이드 | 트라우마 극복을 위한 정보 제공</p>
-    <p>도움이 필요하시면 전문가의 도움을 받으세요</p>
-</div>
-""", unsafe_allow_html=True)
+# # 푸터
+# st.markdown("---")
+# st.markdown("""
+# <div style="text-align: center; color: #666; font-size: 12px;">
+#     <p>© 2024 마음 치유 가이드 | 트라우마 극복을 위한 정보 제공</p>
+#     <p>도움이 필요하시면 전문가의 도움을 받으세요</p>
+# </div>
+# """, unsafe_allow_html=True)
