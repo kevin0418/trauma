@@ -111,7 +111,7 @@ st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 st.markdown("""
 <div class="card">
     <span class="highlight">마음에 상처, 트라우마, 고통받고 계신가요?</span><br><br>
-    여기 Kevin이 맛깔나게 여러 각도에서 제안합니다.<br>
+    **여기 Kevin이 맛깔나게 여러 각도에서 제안합니다**<br>
     <span class="highlight">아래 다양한 자료를 통해 트라우마 극복의 길을 찾아보세요</span>
 </div>
 """, unsafe_allow_html=True)
