@@ -70,7 +70,7 @@ st.link_button("K Video 를 통해 보기", "https://youtu.be/8u1qwOHuge8")
 
 
 # 이미지를 불러옵니다.
-image = Image.open("trauma1.jpg")
+image = Image.open("trauma1.JPG")
 
 # # 링크 버튼을 생성합니다.
 # if st.button("image 보기"):
