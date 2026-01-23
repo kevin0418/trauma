@@ -2,6 +2,8 @@
 #  Trauma  마음에 상처 극복하기
 #
 import streamlit as st
+from PIL import Image
+import io   
 
 # 페이지 설정 (배경색 등 추가 가능)
 st.set_page_config(page_title="마음에 상처, 트라우마 극복하기", layout="wide")
@@ -65,6 +67,26 @@ st.link_button("Video 를 통해 보기", "https://youtu.be/H2sUB83lq_0")
 
 # Video 링크 버튼
 st.link_button("K Video 를 통해 보기", "https://youtu.be/8u1qwOHuge8")
+
+
+# 이미지를 불러옵니다.
+image = Image.open("trauma1.jpg")
+
+# # 링크 버튼을 생성합니다.
+# if st.button("image 보기"):
+#     st.image(image, caption="트라우마 극복 가이드")
+
+# 세션 상태를 초기화합니다.
+if 'show_image' not in st.session_state:
+    st.session_state.show_image = False
+
+# 토글 버튼 생성
+if st.button("이미지 보기"):
+    st.session_state.show_image = not st.session_state.show_image  # 현재 상태를 반전시킴
+
+# 이미지 표시 여부에 따라 이미지를 출력합니다.
+if st.session_state.show_image:
+    st.image(image, caption="트라우마 극복 가이드")
 
 # 추가 설명 (작은 글씨 + 색상)
 st.markdown("""
